@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f7f7f4;
+  --foreground: #252525;
+  --ink-soft: #6d6d68;
+  --paper: #fffffb;
+  --line: #deded6;
+  --accent: #8c8f82;
+  --rose: #b99891;
+  --font-card: "Noto Serif Thai", serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background:
+    linear-gradient(90deg, rgba(37, 37, 37, 0.04) 1px, transparent 1px),
+    var(--background);
+  background-size: 24px 24px;
+  color: var(--foreground);
+  font-family: var(--font-card), "Sarabun", system-ui, sans-serif;
+}
+
+button,
+select,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.font-serif-thai {
+  --font-card: "Noto Serif Thai", serif;
+}
+
+.font-pridi {
+  --font-card: "Pridi", serif;
+}
+
+.font-anuphan {
+  --font-card: "Anuphan", sans-serif;
+}
+
+.font-sarabun {
+  --font-card: "Sarabun", sans-serif;
+}
+
+.magazine-title {
+  font-feature-settings: "liga" 1;
+  letter-spacing: 0;
+}
+
+.vertical-label {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
