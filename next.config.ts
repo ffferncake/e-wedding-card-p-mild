@@ -8,6 +8,9 @@ const nextConfig: NextConfig = {
       },
       {
         pathname: "/gallery/**"
+      },
+      {
+        pathname: "/kbank_logo.jpg"
       }
     ]
   }
