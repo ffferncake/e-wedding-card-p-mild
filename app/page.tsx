@@ -328,13 +328,13 @@ export default function Home() {
                 sizes="280px"
                 onClick={() => setSelectedGalleryIndex(0)}
               />
-              <div className="gallery-side">
+              <div className="gallery-side h-full aspect-[2/5]">
                 {galleryImages.slice(1, 3).map((src, index) => (
                   <GalleryPhoto
                     key={src}
                     src={src}
                     alt={`แกลเลอรีงานแต่งภาพเล็กที่ ${index + 1}`}
-                    className="gallery-small"
+                    className="gallery-small h-full w-full"
                     sizes="140px"
                     onClick={() => setSelectedGalleryIndex(index + 1)}
                   />
