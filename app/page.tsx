@@ -227,7 +227,7 @@ export default function Home() {
         onPause={() => setIsMusicPlaying(false)}
       />
       <div className="mx-auto w-full max-w-[430px] bg-[var(--paper)] shadow-[0_24px_90px_rgba(88,74,58,0.16)]">
-        <section className="cover-section relative overflow-hidden">
+        <section className="min-h-screen relative overflow-hidden">
           {coverImages.map((src, index) => (
             <Image
               key={src}
