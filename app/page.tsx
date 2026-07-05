@@ -52,6 +52,8 @@ const sectionHearts = [
 ];
 
 const mapUrl = "https://maps.app.goo.gl/2StoGfJFYCRz2BCF9?g_st=ic";
+const rsvpUrl =
+  "https://docs.google.com/forms/d/e/1FAIpQLSfvenenL-CbPwiqEra0D-kYH84_xn-kGIgVAD1O4kXWzsTaJQ/viewform";
 
 export default function Home() {
   const [shareText, setShareText] = useState("แชร์การ์ด");
@@ -413,6 +415,20 @@ export default function Home() {
               {copyText}
             </button>
           </div>
+        </Section>
+
+        <Section kicker="RSVP" title="ยืนยันการเข้าร่วมงาน">
+          <p className="text-center text-sm leading-7 text-[var(--ink-soft)]">
+            กรุณายืนยันการเข้าร่วมงาน
+          </p>
+          <a
+            href={rsvpUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="mt-7 block rounded-[4px] bg-[var(--button)] px-5 py-4 text-center text-sm font-semibold text-white"
+          >
+            Open RSVP Form
+          </a>
         </Section>
 
         <section className="reveal-section relative overflow-hidden border-b border-[var(--line)]">
