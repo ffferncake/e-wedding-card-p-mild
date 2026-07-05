@@ -227,7 +227,7 @@ export default function Home() {
         onPause={() => setIsMusicPlaying(false)}
       />
       <div className="mx-auto w-full max-w-[430px] bg-[var(--paper)] shadow-[0_24px_90px_rgba(88,74,58,0.16)]">
-        <section className="cover-section relative overflow-hidden border-b border-[var(--line)]">
+        <section className="cover-section relative overflow-hidden">
           {coverImages.map((src, index) => (
             <Image
               key={src}
@@ -264,7 +264,7 @@ export default function Home() {
           </div>
         </section>
 
-        <Section kicker="Invitation" title="ขอเชิญร่วมงานแต่งของเรา">
+        <Section kicker="Invitation" title="ขอเชิญร่วมงานแต่งของเรา" reveal={false}>
           <p className="mx-auto mt-6 max-w-[17rem] text-center text-sm leading-7 text-[var(--ink-soft)]">
             ด้วยความยินดี ปาณิสรา วงศ์ศรีเผือก และ ชานน ตระกูลนา
             ขอเรียนเชิญทุกท่านร่วมเป็นเกียรติ
@@ -539,14 +539,18 @@ export default function Home() {
 function Section({
   kicker,
   title,
-  children
+  children,
+  reveal = true
 }: Readonly<{
   kicker: string;
   title: string;
   children: React.ReactNode;
+  reveal?: boolean;
 }>) {
   return (
-    <section className="reveal-section relative overflow-hidden border-b border-[var(--line)] px-6 py-12">
+    <section
+      className={`${reveal ? "reveal-section " : ""}relative overflow-hidden border-b border-[var(--line)] px-6 py-12`}
+    >
       <HeartField hearts={sectionHearts} />
       <div className="relative z-10">
         <SectionHeading kicker={kicker} title={title} />
