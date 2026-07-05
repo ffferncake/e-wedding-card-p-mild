@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useEffect, useMemo, useRef, useState } from "react";
 
 const coverImage = "/cover/3DFA0F52-0221-43A9-84EC-D7D242D3C778.JPG";
-const coverImages = [coverImage, "/gallery/B976026F-3779-43D4-85BC-7292656C9AE8.JPG"];
+const coverImages = [coverImage, "/cover/B976026F-3779-43D4-85BC-7292656C9AE8.JPG"];
 const musicSrc = "/music/Christina%20Perri%20-%20A%20Thousand%20Years%20%28Piano%20Cover%20by%20Riyandi%20Kusuma%29.mp3";
 const brideProfileImage = "/gallery/D736B716-76D3-421E-B514-0FEA56E3010E.JPG";
 const groomProfileImage = "/gallery/C817D0BE-1E21-49CD-ADB5-867C98226DA5.JPG";

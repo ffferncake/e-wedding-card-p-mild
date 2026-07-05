@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     locale: "th_TH",
     images: [
       {
-        url: "/og-image.jpg",
-        width: 1206,
-        height: 633,
+        url: "/og-image-7be.jpg",
+        width: 800,
+        height: 420,
         alt: "Mild and Petch wedding invitation"
       }
     ]
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Mild & Petch Wedding",
     description: "Wedding invitation for Mild and Petch",
-    images: ["/og-image.jpg"]
+    images: ["/og-image-7be.jpg"]
   }
 };
 
