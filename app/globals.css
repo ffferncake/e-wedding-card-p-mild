@@ -75,6 +75,20 @@ a {
   letter-spacing: 0;
 }
 
+.cover-section {
+  min-height: 100vh;
+  min-height: 100svh;
+  min-height: 100dvh;
+}
+
+.cover-content {
+  padding-bottom: clamp(2rem, 7svh, 3rem);
+}
+
+.cover-title {
+  font-size: clamp(3.1rem, 14vw, 4.2rem);
+}
+
 .cover-slide {
   opacity: 0;
   transform: scale(1.015);
@@ -455,5 +469,15 @@ a {
   .reveal-section {
     opacity: 1;
     transform: none;
+  }
+}
+
+@media (max-height: 740px) {
+  .cover-content {
+    padding-bottom: 1.65rem;
+  }
+
+  .cover-title {
+    font-size: clamp(2.7rem, 12.5vw, 3.55rem);
   }
 }

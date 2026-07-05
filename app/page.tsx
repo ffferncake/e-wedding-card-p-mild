@@ -227,7 +227,7 @@ export default function Home() {
         onPause={() => setIsMusicPlaying(false)}
       />
       <div className="mx-auto w-full max-w-[430px] bg-[var(--paper)] shadow-[0_24px_90px_rgba(88,74,58,0.16)]">
-        <section className="relative min-h-[92vh] overflow-hidden border-b border-[var(--line)]">
+        <section className="cover-section relative overflow-hidden border-b border-[var(--line)]">
           {coverImages.map((src, index) => (
             <Image
               key={src}
@@ -235,7 +235,7 @@ export default function Home() {
               alt={`Mild and Petch cover ${index + 1}`}
               fill
               priority={index === 0}
-              className={`cover-slide object-cover ${index === currentCoverIndex ? "is-active" : ""}`}
+              className={`cover-slide object-cover object-center ${index === currentCoverIndex ? "is-active" : ""}`}
               sizes="430px"
             />
           ))}
@@ -244,8 +244,8 @@ export default function Home() {
           <div className="absolute left-6 right-6 top-7 flex items-start justify-between gap-4 text-white">
             <p className="font-script text-[1.65rem] leading-none">Mild & Petch</p>
           </div>
-          <div className="absolute inset-x-0 bottom-0 px-7 pb-12 text-center text-white">
-            <h1 className="font-cover text-[4.2rem] font-semibold leading-[0.78]">
+          <div className="cover-content absolute inset-x-0 bottom-0 px-7 text-center text-white">
+            <h1 className="font-cover cover-title font-semibold leading-[0.78]">
               Our
               <span className="block">Wedding</span>
               <span className="block">Day</span>
