@@ -640,7 +640,7 @@ function ProfileCard({
 function InfoRow({ label, value }: Readonly<{ label: string; value: string }>) {
   return (
     <div className="grid min-h-[4.6rem] grid-cols-[88px_1fr] items-center gap-4 border-b border-[var(--line)] py-4">
-      <p className="text-sm font-semibold tracking-[0.34em] text-[var(--ink-soft)]">{label}</p>
+      <p className="text-sm font-semibold tracking-normal text-[var(--ink-soft)]">{label}</p>
       <p className="text-base font-medium leading-7">{value}</p>
     </div>
   );
